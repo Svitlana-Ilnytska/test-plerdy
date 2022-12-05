@@ -72,7 +72,7 @@
           <div class="backdrop-mobile is-hidden" data-menu>
             <div class="mobile-menu menu-open">
               <div class="container container-menu">
-                <button type="button" class="menu-button-close" data-menu-close>
+                <button type="button" class="menu-button-close mobile" data-menu-close>
                   <svg class="menu-close" width="9" height="9">
                     <use href="./image/sprite.svg#icon-cross"></use>
                   </svg>
@@ -95,7 +95,7 @@
                   <button
                     type="button"
                     class="con-list__btn__active"
-                    data-modal-open-hd
+                    data-modal-open-mobile
                   >
                     Contact sales
                   </button>
@@ -151,11 +151,7 @@
                       <use href="./image/sprite.svg#icon-cross"></use>
                     </svg>
                   </button>
-                  <form
-                    action="#"
-                    class="modal-form"
-                    onsubmit="return process(event)"
-                  >
+                  <form id="form" action="#" class="modal-form">
                     <h2 class="modal-form__title">
                       How to do a Website Audit to Improve SEO & Conversions
                     </h2>
@@ -170,10 +166,10 @@
                         type="text"
                         name="name"
                         id="name"
-                        class="modal-label__list"
+                        class="modal-label__list req name"
                       />
                     </label>
-                    <div class="alert-info" style="display: none"></div>
+                    <div class="alert-error" style="display: none"></div>
                     <label class="modal-form__label">
                       <span class="modal-label__name">Lable</span>
                       <input
@@ -181,11 +177,10 @@
                         type="tel"
                         id="phone"
                         placeholder="XX XXX XXXX"
-                        class="modal-label__list"
+                        class="modal-label__list req tel"
                       />
                     </label>
 
-                    <div class="alert-error" style="display: none"></div>
                     <div class="modal-form-btns">
                       <input
                         type="button"
@@ -205,7 +200,7 @@
                         type="checkbox"
                         name="user-agree"
                         id="checkbox"
-                        class="modal-form__check visually-hidden"
+                        class="modal-form__check visually-hidden req"
                       />
                       <label for="checkbox" class="modal-form__check-agree">
                         By sending up? you agree to our
@@ -414,5 +409,6 @@
     <script src="./js/menu.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/select.js"></script>
+    <script src="./js/validateForm.js"></script>
   </body>
 </html>
