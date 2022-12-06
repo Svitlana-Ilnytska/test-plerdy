@@ -10,11 +10,9 @@ function formSend(e) {
   let error = formValidate(form);
 
   if (error === 0) {
-    errorMessage.style.display = "none";
     errorMessage.innerHTML = "";
     alert("Thank you, we will call you back =)");
     form.reset();
-    // modal.classList.add("is-hidden");
   } else {
     errorMessage.style.display = "";
     errorMessage.innerHTML = `Please fill in all the fields.`;

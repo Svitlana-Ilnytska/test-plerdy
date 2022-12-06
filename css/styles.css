@@ -371,6 +371,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
@@ -589,6 +590,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .button-prev {
@@ -838,6 +840,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
@@ -938,6 +941,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   margin: 0 auto 10px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
